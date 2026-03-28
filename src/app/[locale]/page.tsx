@@ -2,7 +2,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import { BookOpen, BarChart3, Headphones, Calendar, PenTool, Target, Repeat, BookText, Brain, FileCheck, Type, BookOpenCheck, PenLine, Sparkles, Languages } from "lucide-react";
 
-// TODO: i18n - move these labels and descriptions to translation files
 const FEATURES = [
   {
     href: "daily",
@@ -10,8 +9,7 @@ const FEATURES = [
     icon: Calendar,
     label: "Daily Challenge",
     description: "Test yourself with 5 new questions every day",
-    color: "from-amber-500 to-orange-500",
-    bg: "bg-amber-50",
+    color: "#ffc800",
   },
   {
     href: "tracing",
@@ -19,8 +17,7 @@ const FEATURES = [
     icon: PenTool,
     label: "Letter Tracing",
     description: "Practice writing Arabic letters with your finger",
-    color: "from-blue-500 to-cyan-500",
-    bg: "bg-blue-50",
+    color: "#1cb0f6",
   },
   {
     href: "makhraj",
@@ -28,8 +25,7 @@ const FEATURES = [
     icon: Target,
     label: "Makhraj Map",
     description: "Interactive map of letter articulation points",
-    color: "from-red-500 to-pink-500",
-    bg: "bg-red-50",
+    color: "#ff4b4b",
   },
   {
     href: "compare",
@@ -37,8 +33,7 @@ const FEATURES = [
     icon: Repeat,
     label: "Similar Letters",
     description: "Learn to distinguish confusing letter pairs",
-    color: "from-violet-500 to-purple-500",
-    bg: "bg-violet-50",
+    color: "#ce82ff",
   },
   {
     href: "listening",
@@ -46,8 +41,7 @@ const FEATURES = [
     icon: Headphones,
     label: "Listening Mode",
     description: "Train your ear to recognize Arabic sounds",
-    color: "from-teal-500 to-emerald-500",
-    bg: "bg-teal-50",
+    color: "#58cc02",
   },
   {
     href: "stories",
@@ -55,8 +49,7 @@ const FEATURES = [
     icon: BookText,
     label: "Letter Stories",
     description: "Fun stories to remember each letter",
-    color: "from-pink-500 to-rose-500",
-    bg: "bg-pink-50",
+    color: "#ff86d0",
   },
   {
     href: "review",
@@ -64,8 +57,7 @@ const FEATURES = [
     icon: Brain,
     label: "Smart Review",
     description: "AI-powered spaced repetition for optimal learning",
-    color: "from-indigo-500 to-blue-500",
-    bg: "bg-indigo-50",
+    color: "#1cb0f6",
   },
   {
     href: "exam",
@@ -73,8 +65,7 @@ const FEATURES = [
     icon: FileCheck,
     label: "Final Exam",
     description: "Comprehensive test with certificate of completion",
-    color: "from-green-600 to-emerald-600",
-    bg: "bg-green-50",
+    color: "#58cc02",
   },
   {
     href: "spelling",
@@ -82,8 +73,7 @@ const FEATURES = [
     icon: Type,
     label: "Syllable Building",
     description: "Learn to connect letters and build syllables",
-    color: "from-cyan-500 to-blue-500",
-    bg: "bg-cyan-50",
+    color: "#1cb0f6",
   },
   {
     href: "reading",
@@ -91,8 +81,7 @@ const FEATURES = [
     icon: BookOpenCheck,
     label: "Graded Reading",
     description: "Read Arabic texts from words to paragraphs",
-    color: "from-emerald-500 to-green-600",
-    bg: "bg-emerald-50",
+    color: "#58cc02",
   },
   {
     href: "dictation",
@@ -100,8 +89,7 @@ const FEATURES = [
     icon: PenLine,
     label: "Dictation",
     description: "Listen and write - train your ear and hand",
-    color: "from-sky-500 to-blue-600",
-    bg: "bg-sky-50",
+    color: "#1cb0f6",
   },
   {
     href: "tajweed",
@@ -109,8 +97,7 @@ const FEATURES = [
     icon: Sparkles,
     label: "Tajweed Rules",
     description: "Learn Quran recitation rules with examples",
-    color: "from-yellow-500 to-amber-600",
-    bg: "bg-yellow-50",
+    color: "#ffc800",
   },
   {
     href: "vocabulary",
@@ -118,8 +105,7 @@ const FEATURES = [
     icon: Languages,
     label: "Quranic Vocabulary",
     description: "Master the most common words in the Quran",
-    color: "from-rose-500 to-red-600",
-    bg: "bg-rose-50",
+    color: "#ff4b4b",
   },
 ];
 
@@ -130,93 +116,124 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const tc = await getTranslations("common");
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
-      {/* Hero */}
-      <div className="text-center mb-16">
-        <h1 className="font-[family-name:var(--font-arabic)] text-6xl text-green-900 mb-2">
-          {tc("appNameAr")}
-        </h1>
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">{t("heroTitle")}</h2>
-        <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-          {t("heroSubtitle")}
-        </p>
-        <div className="flex gap-4 justify-center flex-wrap">
-          <Link
-            href={`/${locale}/units`}
-            className="px-8 py-3 bg-green-800 text-white rounded-xl font-semibold text-lg hover:bg-green-700 transition-colors shadow-lg shadow-green-800/25"
-          >
-            {t("startLearning")}
-          </Link>
-          <Link
-            href={`/${locale}/progress`}
-            className="px-8 py-3 bg-white text-green-800 rounded-xl font-semibold text-lg hover:bg-gray-50 transition-colors shadow-md border border-green-100"
-          >
-            {t("viewProgress")}
-          </Link>
+    <div className="bg-white min-h-screen">
+      {/* Hero Section */}
+      <section className="py-16 md:py-24">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h1 className="font-[family-name:var(--font-arabic)] text-7xl md:text-8xl text-[#58cc02] font-extrabold mb-4">
+            {tc("appNameAr")}
+          </h1>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#4b4b4b] mb-4">
+            {t("heroTitle")}
+          </h2>
+          <p className="text-lg text-[#777] mb-10 max-w-2xl mx-auto">
+            {t("heroSubtitle")}
+          </p>
+          <div className="flex gap-4 justify-center flex-wrap">
+            <Link
+              href={`/${locale}/units`}
+              className="px-10 py-3 bg-[#58cc02] text-white rounded-2xl font-bold text-base uppercase tracking-wider hover:bg-[#4caf00] transition-colors shadow-[0_4px_0_#4caf00] hover:shadow-[0_4px_0_#3d9000] active:shadow-none active:translate-y-[4px]"
+            >
+              {t("startLearning")}
+            </Link>
+            <Link
+              href={`/${locale}/progress`}
+              className="px-10 py-3 border-2 border-[#e5e5e5] text-[#1cb0f6] rounded-2xl font-bold text-base uppercase tracking-wider hover:bg-[#f7f7f7] transition-colors"
+            >
+              {t("viewProgress")}
+            </Link>
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-        {[
-          { icon: BookOpen, label: t("totalLetters"), color: "green" },
-          { icon: BarChart3, label: t("totalUnits"), color: "orange" },
-          { icon: Headphones, label: t("features"), color: "purple" },
-        ].map((item, i) => (
-          <div
-            key={i}
-            className="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow"
-          >
-            <item.icon className="mx-auto mb-3 text-green-700" size={36} />
-            <div className="text-lg font-semibold text-gray-800">{item.label}</div>
-          </div>
-        ))}
-      </div>
-
-      {/* Features - TODO: i18n */}
-      <div className="mb-16">
-        <h2 className="text-2xl font-bold text-gray-800 text-center mb-2">
-          Explore All Features
-        </h2>
-        <p className="text-gray-500 text-center mb-8">
-          Everything you need to master Arabic letters and pronunciation
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {FEATURES.map((feature) => (
-            <Link
-              key={feature.href}
-              href={`/${locale}/${feature.href}`}
-              className={`group relative ${feature.bg} rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-gray-200`}
-            >
+      <section className="py-8">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              { icon: BookOpen, label: t("totalLetters"), color: "#58cc02" },
+              { icon: BarChart3, label: t("totalUnits"), color: "#ffc800" },
+              { icon: Headphones, label: t("features"), color: "#1cb0f6" },
+            ].map((item, i) => (
               <div
-                className={`inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br ${feature.color} text-white mb-4 shadow-sm group-hover:scale-110 transition-transform`}
+                key={i}
+                className="bg-white rounded-2xl p-6 text-center border-2 border-[#e5e5e5] hover:border-[#d0d0d0] transition-colors"
               >
-                <feature.icon size={22} />
+                <item.icon className="mx-auto mb-3" size={36} style={{ color: item.color }} />
+                <div className="text-lg font-bold text-[#4b4b4b]">{item.label}</div>
               </div>
-              <h3 className="font-semibold text-gray-800 mb-1 text-lg">
-                {feature.emoji} {feature.label}
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                {feature.description}
-              </p>
-            </Link>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Preview letters */}
-      <div className="text-center">
-        <div className="flex justify-center gap-4 flex-wrap font-[family-name:var(--font-arabic)] text-5xl text-green-800">
-          {"أبتثجحخدذرزسشصضطظعغفقكلمنهوي".split("").map((l, i) => (
-            <span
-              key={i}
-              className="w-14 h-14 rounded-xl bg-white shadow-sm flex items-center justify-center hover:shadow-md hover:scale-110 transition-all cursor-default"
-            >
-              {l}
-            </span>
-          ))}
+      {/* Features */}
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-extrabold text-[#4b4b4b] text-center mb-2">
+            Explore All Features
+          </h2>
+          <p className="text-[#afafaf] text-center mb-10 font-bold">
+            Everything you need to master Arabic letters and pronunciation
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {FEATURES.map((feature) => (
+              <Link
+                key={feature.href}
+                href={`/${locale}/${feature.href}`}
+                className="group bg-white rounded-2xl p-6 border-2 border-[#e5e5e5] hover:border-[#d0d0d0] transition-all duration-200 hover:shadow-md"
+              >
+                <div
+                  className="inline-flex items-center justify-center w-12 h-12 rounded-xl text-white mb-4 group-hover:scale-110 transition-transform"
+                  style={{ backgroundColor: feature.color }}
+                >
+                  <feature.icon size={22} />
+                </div>
+                <h3 className="font-bold text-[#4b4b4b] mb-1 text-lg">
+                  {feature.label}
+                </h3>
+                <p className="text-sm text-[#777] leading-relaxed">
+                  {feature.description}
+                </p>
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Preview Letters */}
+      <section className="py-16 bg-[#f7f7f7]">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-2xl font-extrabold text-[#4b4b4b] mb-8">
+            Arabic Alphabet
+          </h2>
+          <div className="flex justify-center gap-3 flex-wrap font-[family-name:var(--font-arabic)] text-4xl text-[#4b4b4b]">
+            {"أبتثجحخدذرزسشصضطظعغفقكلمنهوي".split("").map((l, i) => (
+              <span
+                key={i}
+                className="w-14 h-14 rounded-2xl bg-white border-2 border-[#e5e5e5] flex items-center justify-center hover:border-[#58cc02] hover:text-[#58cc02] hover:shadow-[0_2px_0_#58cc02] hover:scale-110 transition-all cursor-default font-bold"
+              >
+                {l}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#58cc02] mb-6">
+            Start Learning Arabic Today
+          </h2>
+          <Link
+            href={`/${locale}/units`}
+            className="inline-block px-12 py-4 bg-[#58cc02] text-white rounded-2xl font-bold text-lg uppercase tracking-wider hover:bg-[#4caf00] transition-colors shadow-[0_4px_0_#4caf00] hover:shadow-[0_4px_0_#3d9000] active:shadow-none active:translate-y-[4px]"
+          >
+            GET STARTED
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

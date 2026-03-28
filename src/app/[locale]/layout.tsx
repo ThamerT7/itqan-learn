@@ -40,7 +40,7 @@ export default async function LocaleLayout({
       <body className={`${arabicFont.variable} antialiased`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ProgressProvider>
-            <div className="min-h-screen flex flex-col bg-gradient-to-br from-green-50 to-orange-50">
+            <div className="min-h-screen flex flex-col bg-white">
               <Header />
               <main className="flex-1">{children}</main>
               <Footer />

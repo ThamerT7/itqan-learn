@@ -6,12 +6,16 @@ export function Footer() {
   const t = useTranslations("common");
 
   return (
-    <footer className="text-center py-8 text-gray-400 text-sm">
-      <div className="font-[family-name:var(--font-arabic)] text-lg text-green-800 mb-1">
-        {t("appNameAr")}
+    <footer className="bg-[#58cc02] text-white py-12">
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="text-center">
+          <div className="font-[family-name:var(--font-arabic)] text-3xl font-extrabold mb-2">
+            {t("appNameAr")}
+          </div>
+          <div className="text-white/80 font-bold mb-4">{t("subtitle")}</div>
+          <div className="text-white/60 text-sm">Designed for itqanq.com</div>
+        </div>
       </div>
-      <div>{t("subtitle")}</div>
-      <div className="mt-1">Designed for itqanq.com</div>
     </footer>
   );
 }
