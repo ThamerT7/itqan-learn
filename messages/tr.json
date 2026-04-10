@@ -1,0 +1,63 @@
+{
+  "common": {
+    "appName": "Itqan Learn",
+    "appNameAr": "إتقان",
+    "subtitle": "Arapça Harfleri Öğren",
+    "of": "/",
+    "previous": "Önceki",
+    "next": "Sonraki"
+  },
+  "home": {
+    "heroTitle": "Arapça Harfleri ve Telaffuzu Öğren",
+    "heroSubtitle": "Etkileşimli kartlar, testler ve sesli içeriklerle Arap alfabesini öğren",
+    "startLearning": "Öğrenmeye Başla",
+    "viewProgress": "İlerlemeyi Gör",
+    "totalLetters": "28 Harf",
+    "totalUnits": "7 Ünite",
+    "features": "13+ Özellik"
+  },
+  "units": {
+    "title": "Öğrenme Üniteleri",
+    "subtitle": "Arapça harfleri ünite ünite öğren",
+    "unit": "Ünite",
+    "letters": "harf",
+    "startFlashcards": "Kartlar",
+    "startQuiz": "Test Çöz"
+  },
+  "flashcards": {
+    "card": "Kart",
+    "isolated": "Tek Başına",
+    "initial": "Başta",
+    "medial": "Ortada",
+    "final": "Sonda",
+    "flipToSee": "Çevirmek için dokun",
+    "makhraj": "Çıkış Noktası",
+    "tip": "İpucu",
+    "example": "Örnek"
+  },
+  "quiz": {
+    "question": "Soru",
+    "checkAnswer": "Kontrol Et",
+    "nextQuestion": "Sonraki",
+    "score": "Puan",
+    "excellent": "Mükemmel! Bu üniteyi tamamladın!",
+    "good": "İyi iş! Pratik yapmaya devam et!",
+    "needsPractice": "Pratik yapmaya devam et! Kartları gözden geçir.",
+    "restart": "Tekrar Dene",
+    "backToCards": "Kartlara Dön",
+    "correct": "Doğru!",
+    "incorrect": "Tam doğru değil"
+  },
+  "progress": {
+    "title": "İlerlemeniz",
+    "subtitle": "Arapça öğrenme yolculuğunuzu takip edin",
+    "streak": "Günlük Seri",
+    "totalPoints": "Toplam Puan",
+    "lettersLearned": "Öğrenilen Harfler",
+    "unitsCompleted": "Tamamlanan",
+    "bestScore": "En İyi Puan",
+    "noQuizYet": "Henüz test yok",
+    "resetProgress": "İlerlemeyi Sıfırla",
+    "resetConfirm": "Emin misiniz? Bu işlem tüm ilerlemenizi silecektir."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "common": {
+    "appName": "Itqan Learn",
+    "appNameAr": "إتقان",
+    "subtitle": "Kuasai Huruf Arab",
+    "of": "dari",
+    "previous": "Sebelumnya",
+    "next": "Selanjutnya"
+  },
+  "home": {
+    "heroTitle": "Pelajari Huruf Arab & Pengucapan",
+    "heroSubtitle": "Kuasai alfabet Arab dengan kartu interaktif, kuis, dan audio",
+    "startLearning": "Mulai Belajar",
+    "viewProgress": "Lihat Kemajuan",
+    "totalLetters": "28 Huruf",
+    "totalUnits": "7 Unit",
+    "features": "13+ Fitur"
+  },
+  "units": {
+    "title": "Unit Pembelajaran",
+    "subtitle": "Kuasai huruf Arab unit demi unit",
+    "unit": "Unit",
+    "letters": "huruf",
+    "startFlashcards": "Kartu",
+    "startQuiz": "Ikuti Kuis"
+  },
+  "flashcards": {
+    "card": "Kartu",
+    "isolated": "Terpisah",
+    "initial": "Awal",
+    "medial": "Tengah",
+    "final": "Akhir",
+    "flipToSee": "Ketuk untuk membalik",
+    "makhraj": "Titik Artikulasi",
+    "tip": "Tips",
+    "example": "Contoh"
+  },
+  "quiz": {
+    "question": "Pertanyaan",
+    "checkAnswer": "Periksa",
+    "nextQuestion": "Selanjutnya",
+    "score": "Skor",
+    "excellent": "Luar biasa! Anda telah menguasai unit ini!",
+    "good": "Bagus! Terus berlatih!",
+    "needsPractice": "Terus berlatih! Tinjau kartu-kartu.",
+    "restart": "Coba Lagi",
+    "backToCards": "Kembali ke Kartu",
+    "correct": "Benar!",
+    "incorrect": "Belum tepat"
+  },
+  "progress": {
+    "title": "Kemajuan Anda",
+    "subtitle": "Lacak perjalanan belajar bahasa Arab Anda",
+    "streak": "Hari Beruntun",
+    "totalPoints": "Total Poin",
+    "lettersLearned": "Huruf Dipelajari",
+    "unitsCompleted": "Selesai",
+    "bestScore": "Skor Terbaik",
+    "noQuizYet": "Belum ada kuis",
+    "resetProgress": "Reset Kemajuan",
+    "resetConfirm": "Apakah Anda yakin? Ini akan menghapus semua kemajuan Anda."
+  }
+}

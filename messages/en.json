@@ -1,0 +1,63 @@
+{
+  "common": {
+    "appName": "Itqan Learn",
+    "appNameAr": "إتقان",
+    "subtitle": "Master Arabic Letters",
+    "of": "of",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "home": {
+    "heroTitle": "Learn Arabic Letters & Pronunciation",
+    "heroSubtitle": "Master the Arabic alphabet with interactive flashcards, quizzes, and audio",
+    "startLearning": "Start Learning",
+    "viewProgress": "View Progress",
+    "totalLetters": "28 Letters",
+    "totalUnits": "7 Units",
+    "features": "13+ Features"
+  },
+  "units": {
+    "title": "Learning Units",
+    "subtitle": "Master Arabic letters unit by unit",
+    "unit": "Unit",
+    "letters": "letters",
+    "startFlashcards": "Flashcards",
+    "startQuiz": "Take Quiz"
+  },
+  "flashcards": {
+    "card": "Card",
+    "isolated": "Isolated",
+    "initial": "Initial",
+    "medial": "Medial",
+    "final": "Final",
+    "flipToSee": "Tap to flip",
+    "makhraj": "Articulation Point",
+    "tip": "Tip",
+    "example": "Example"
+  },
+  "quiz": {
+    "question": "Question",
+    "checkAnswer": "Check",
+    "nextQuestion": "Next",
+    "score": "Score",
+    "excellent": "Excellent! You've mastered this unit!",
+    "good": "Good job! Keep practicing!",
+    "needsPractice": "Keep practicing! Review the flashcards.",
+    "restart": "Try Again",
+    "backToCards": "Back to Cards",
+    "correct": "Correct!",
+    "incorrect": "Not quite right"
+  },
+  "progress": {
+    "title": "Your Progress",
+    "subtitle": "Track your Arabic learning journey",
+    "streak": "Day Streak",
+    "totalPoints": "Total Points",
+    "lettersLearned": "Letters Learned",
+    "unitsCompleted": "Completed",
+    "bestScore": "Best Score",
+    "noQuizYet": "No quiz yet",
+    "resetProgress": "Reset Progress",
+    "resetConfirm": "Are you sure? This will delete all your progress."
+  }
+}

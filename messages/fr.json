@@ -1,0 +1,63 @@
+{
+  "common": {
+    "appName": "Itqan Learn",
+    "appNameAr": "إتقان",
+    "subtitle": "Maîtrisez les Lettres Arabes",
+    "of": "sur",
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "home": {
+    "heroTitle": "Apprenez les Lettres Arabes et la Prononciation",
+    "heroSubtitle": "Maîtrisez l'alphabet arabe avec des cartes interactives, des quiz et de l'audio",
+    "startLearning": "Commencer",
+    "viewProgress": "Voir la Progression",
+    "totalLetters": "28 Lettres",
+    "totalUnits": "7 Unités",
+    "features": "13+ Fonctionnalités"
+  },
+  "units": {
+    "title": "Unités d'Apprentissage",
+    "subtitle": "Maîtrisez les lettres arabes unité par unité",
+    "unit": "Unité",
+    "letters": "lettres",
+    "startFlashcards": "Cartes",
+    "startQuiz": "Quiz"
+  },
+  "flashcards": {
+    "card": "Carte",
+    "isolated": "Isolée",
+    "initial": "Initiale",
+    "medial": "Médiane",
+    "final": "Finale",
+    "flipToSee": "Appuyez pour retourner",
+    "makhraj": "Point d'Articulation",
+    "tip": "Conseil",
+    "example": "Exemple"
+  },
+  "quiz": {
+    "question": "Question",
+    "checkAnswer": "Vérifier",
+    "nextQuestion": "Suivant",
+    "score": "Score",
+    "excellent": "Excellent ! Vous avez maîtrisé cette unité !",
+    "good": "Bon travail ! Continuez à pratiquer !",
+    "needsPractice": "Continuez à pratiquer ! Révisez les cartes.",
+    "restart": "Réessayer",
+    "backToCards": "Retour aux Cartes",
+    "correct": "Correct !",
+    "incorrect": "Pas tout à fait"
+  },
+  "progress": {
+    "title": "Votre Progression",
+    "subtitle": "Suivez votre parcours d'apprentissage de l'arabe",
+    "streak": "Jours Consécutifs",
+    "totalPoints": "Points Totaux",
+    "lettersLearned": "Lettres Apprises",
+    "unitsCompleted": "Complétées",
+    "bestScore": "Meilleur Score",
+    "noQuizYet": "Pas encore de quiz",
+    "resetProgress": "Réinitialiser",
+    "resetConfirm": "Êtes-vous sûr ? Cela supprimera toute votre progression."
+  }
+}

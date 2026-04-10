@@ -1,0 +1,63 @@
+{
+  "common": {
+    "appName": "Itqan Learn",
+    "appNameAr": "إتقان",
+    "subtitle": "عربی حروف سیکھیں",
+    "of": "میں سے",
+    "previous": "پچھلا",
+    "next": "اگلا"
+  },
+  "home": {
+    "heroTitle": "عربی حروف اور تلفظ سیکھیں",
+    "heroSubtitle": "انٹرایکٹو کارڈز، کوئز اور آڈیو کے ساتھ عربی حروف تہجی سیکھیں",
+    "startLearning": "سیکھنا شروع کریں",
+    "viewProgress": "پیشرفت دیکھیں",
+    "totalLetters": "28 حروف",
+    "totalUnits": "7 یونٹس",
+    "features": "13+ خصوصیات"
+  },
+  "units": {
+    "title": "سیکھنے کے یونٹس",
+    "subtitle": "یونٹ بہ یونٹ عربی حروف سیکھیں",
+    "unit": "یونٹ",
+    "letters": "حروف",
+    "startFlashcards": "کارڈز",
+    "startQuiz": "کوئز لیں"
+  },
+  "flashcards": {
+    "card": "کارڈ",
+    "isolated": "علیحدہ",
+    "initial": "ابتدائی",
+    "medial": "درمیانی",
+    "final": "آخری",
+    "flipToSee": "پلٹنے کے لیے ٹیپ کریں",
+    "makhraj": "مخرج",
+    "tip": "مشورہ",
+    "example": "مثال"
+  },
+  "quiz": {
+    "question": "سوال",
+    "checkAnswer": "جانچیں",
+    "nextQuestion": "اگلا",
+    "score": "سکور",
+    "excellent": "بہترین! آپ نے یہ یونٹ مکمل کر لیا!",
+    "good": "شاباش! مشق جاری رکھیں!",
+    "needsPractice": "مشق جاری رکھیں! کارڈز دوبارہ دیکھیں۔",
+    "restart": "دوبارہ کوشش کریں",
+    "backToCards": "کارڈز پر واپس",
+    "correct": "صحیح!",
+    "incorrect": "بالکل صحیح نہیں"
+  },
+  "progress": {
+    "title": "آپ کی پیشرفت",
+    "subtitle": "اپنے عربی سیکھنے کے سفر کو ٹریک کریں",
+    "streak": "دن کا سلسلہ",
+    "totalPoints": "کل پوائنٹس",
+    "lettersLearned": "سیکھے گئے حروف",
+    "unitsCompleted": "مکمل",
+    "bestScore": "بہترین سکور",
+    "noQuizYet": "ابھی تک کوئی کوئز نہیں",
+    "resetProgress": "پیشرفت ری سیٹ کریں",
+    "resetConfirm": "کیا آپ کو یقین ہے؟ یہ آپ کی تمام پیشرفت حذف کر دے گا۔"
+  }
+}
